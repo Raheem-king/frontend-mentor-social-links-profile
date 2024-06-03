@@ -1,0 +1,85 @@
+
+:root{
+    --primary-color: hsl(75, 94%, 57%);
+    --text-color: hsl(0, 0%, 100%);
+    --secondary-color: hsl(0, 0%, 8%);
+    --background-color: hsl(0, 0%, 12%);
+    --grey: 
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+body{
+    display: grid;
+    place-content: center;
+    min-height: 100vh;
+    background-color: var(--secondary-color);
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    max-height: 80vh;
+    max-width: 80vw;
+    padding: 2rem;
+    background-color: var(--background-color);
+    border-radius: 1rem;
+}
+.image__container{
+    display: flex;
+    margin: 1rem;
+}
+
+
+img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: auto;
+}
+
+.profile__details{
+    line-height: 2rem;
+    text-align: center;
+}
+
+h1{
+    color: var(--text-color);
+    font-size: 2rem;
+}
+.location{
+    color: var(--primary-color);
+    font-size: 1.1rem;
+}
+
+.profession{
+    color: hsl(0, 0%, 50%);
+    margin: 1.5rem;
+}
+
+li{
+    text-align: center;
+    font-size: 2rem;
+    list-style: none;
+}
+
+a{
+    display: grid;
+    color: var(--text-color);
+    border-radius: 0.5rem;
+    background-color: hsl(0, 0%, 20%);
+    padding: 0.8rem;
+    text-decoration: none;
+    
+}
+
+ul{
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+}
